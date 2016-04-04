@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		23FD39961CB2CF0D00C8B4A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FD39941CB2CF0D00C8B4A8 /* LaunchScreen.storyboard */; };
 		23FD39A11CB2CF0D00C8B4A8 /* NoshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FD39A01CB2CF0D00C8B4A8 /* NoshTests.swift */; };
 		23FD39AC1CB2CF0D00C8B4A8 /* NoshUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FD39AB1CB2CF0D00C8B4A8 /* NoshUITests.swift */; };
+		23FD39BB1CB2D3C800C8B4A8 /* Feedbag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FD39BA1CB2D3C800C8B4A8 /* Feedbag.swift */; };
+		23FD39BE1CB2D41C00C8B4A8 /* FeedbagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FD39BD1CB2D41C00C8B4A8 /* FeedbagTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		23FD39A71CB2CF0D00C8B4A8 /* NoshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23FD39AB1CB2CF0D00C8B4A8 /* NoshUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoshUITests.swift; sourceTree = "<group>"; };
 		23FD39AD1CB2CF0D00C8B4A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23FD39BA1CB2D3C800C8B4A8 /* Feedbag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Feedbag.swift; path = Feedbag/Feedbag.swift; sourceTree = "<group>"; };
+		23FD39BD1CB2D41C00C8B4A8 /* FeedbagTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedbagTests.swift; path = FeedbagTests/FeedbagTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 		23FD397C1CB2CF0D00C8B4A8 = {
 			isa = PBXGroup;
 			children = (
+				23FD39BC1CB2D3F100C8B4A8 /* FeedbagTests */,
+				23FD39B91CB2D39A00C8B4A8 /* Feedbag */,
 				23FD39871CB2CF0D00C8B4A8 /* Nosh */,
 				23FD399F1CB2CF0D00C8B4A8 /* NoshTests */,
 				23FD39AA1CB2CF0D00C8B4A8 /* NoshUITests */,
@@ -126,6 +132,22 @@
 				23FD39AD1CB2CF0D00C8B4A8 /* Info.plist */,
 			);
 			path = NoshUITests;
+			sourceTree = "<group>";
+		};
+		23FD39B91CB2D39A00C8B4A8 /* Feedbag */ = {
+			isa = PBXGroup;
+			children = (
+				23FD39BA1CB2D3C800C8B4A8 /* Feedbag.swift */,
+			);
+			name = Feedbag;
+			sourceTree = "<group>";
+		};
+		23FD39BC1CB2D3F100C8B4A8 /* FeedbagTests */ = {
+			isa = PBXGroup;
+			children = (
+				23FD39BD1CB2D41C00C8B4A8 /* FeedbagTests.swift */,
+			);
+			name = FeedbagTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,7 +230,7 @@
 				};
 			};
 			buildConfigurationList = 23FD39801CB2CF0D00C8B4A8 /* Build configuration list for PBXProject "Nosh" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -259,7 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23FD39BE1CB2D41C00C8B4A8 /* FeedbagTests.swift in Sources */,
 				23FD398B1CB2CF0D00C8B4A8 /* ViewController.swift in Sources */,
+				23FD39BB1CB2D3C800C8B4A8 /* Feedbag.swift in Sources */,
 				23FD39911CB2CF0D00C8B4A8 /* Nosh.xcdatamodeld in Sources */,
 				23FD39891CB2CF0D00C8B4A8 /* AppDelegate.swift in Sources */,
 			);
