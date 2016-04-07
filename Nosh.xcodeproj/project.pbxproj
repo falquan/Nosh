@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2358DE9A1CB6C21000F3BF80 /* SearchOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358DE991CB6C21000F3BF80 /* SearchOptions.swift */; };
+		2358DE9C1CB6C5EF00F3BF80 /* SortBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358DE9B1CB6C5EF00F3BF80 /* SortBy.swift */; };
+		2358DE9E1CB6C60A00F3BF80 /* ResultsFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358DE9D1CB6C60A00F3BF80 /* ResultsFormat.swift */; };
+		2358DEA01CB6C94300F3BF80 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358DE9F1CB6C94300F3BF80 /* SearchResult.swift */; };
+		2358DEA21CB6CA0300F3BF80 /* ResultList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358DEA11CB6CA0300F3BF80 /* ResultList.swift */; };
+		2358DEA41CB6CAE400F3BF80 /* ResultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358DEA31CB6CAE400F3BF80 /* ResultItem.swift */; };
 		23FD39891CB2CF0D00C8B4A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FD39881CB2CF0D00C8B4A8 /* AppDelegate.swift */; };
 		23FD398B1CB2CF0D00C8B4A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FD398A1CB2CF0D00C8B4A8 /* ViewController.swift */; };
 		23FD398E1CB2CF0D00C8B4A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FD398C1CB2CF0D00C8B4A8 /* Main.storyboard */; };
@@ -37,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2358DE991CB6C21000F3BF80 /* SearchOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchOptions.swift; path = Feedbag/SearchOptions.swift; sourceTree = "<group>"; };
+		2358DE9B1CB6C5EF00F3BF80 /* SortBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SortBy.swift; path = Feedbag/SortBy.swift; sourceTree = "<group>"; };
+		2358DE9D1CB6C60A00F3BF80 /* ResultsFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultsFormat.swift; path = Feedbag/ResultsFormat.swift; sourceTree = "<group>"; };
+		2358DE9F1CB6C94300F3BF80 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		2358DEA11CB6CA0300F3BF80 /* ResultList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultList.swift; sourceTree = "<group>"; };
+		2358DEA31CB6CAE400F3BF80 /* ResultItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultItem.swift; sourceTree = "<group>"; };
 		23FD39851CB2CF0D00C8B4A8 /* Nosh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nosh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23FD39881CB2CF0D00C8B4A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23FD398A1CB2CF0D00C8B4A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +150,12 @@
 			isa = PBXGroup;
 			children = (
 				23FD39BA1CB2D3C800C8B4A8 /* Feedbag.swift */,
+				2358DE991CB6C21000F3BF80 /* SearchOptions.swift */,
+				2358DE9B1CB6C5EF00F3BF80 /* SortBy.swift */,
+				2358DE9D1CB6C60A00F3BF80 /* ResultsFormat.swift */,
+				2358DE9F1CB6C94300F3BF80 /* SearchResult.swift */,
+				2358DEA11CB6CA0300F3BF80 /* ResultList.swift */,
+				2358DEA31CB6CAE400F3BF80 /* ResultItem.swift */,
 			);
 			name = Feedbag;
 			sourceTree = "<group>";
@@ -218,6 +236,7 @@
 				TargetAttributes = {
 					23FD39841CB2CF0D00C8B4A8 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = DYK5XJLSL5;
 					};
 					23FD399B1CB2CF0D00C8B4A8 = {
 						CreatedOnToolsVersion = 7.3;
@@ -281,11 +300,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2358DEA21CB6CA0300F3BF80 /* ResultList.swift in Sources */,
+				2358DE9A1CB6C21000F3BF80 /* SearchOptions.swift in Sources */,
+				2358DEA01CB6C94300F3BF80 /* SearchResult.swift in Sources */,
+				2358DE9E1CB6C60A00F3BF80 /* ResultsFormat.swift in Sources */,
 				23FD39BE1CB2D41C00C8B4A8 /* FeedbagTests.swift in Sources */,
+				2358DEA41CB6CAE400F3BF80 /* ResultItem.swift in Sources */,
 				23FD398B1CB2CF0D00C8B4A8 /* ViewController.swift in Sources */,
 				23FD39BB1CB2D3C800C8B4A8 /* Feedbag.swift in Sources */,
 				23FD39911CB2CF0D00C8B4A8 /* Nosh.xcdatamodeld in Sources */,
 				23FD39891CB2CF0D00C8B4A8 /* AppDelegate.swift in Sources */,
+				2358DE9C1CB6C5EF00F3BF80 /* SortBy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,10 +454,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Nosh/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.falquan.Nosh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -440,10 +468,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Nosh/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.falquan.Nosh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -512,6 +543,7 @@
 				23FD39B21CB2CF0D00C8B4A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23FD39B31CB2CF0D00C8B4A8 /* Build configuration list for PBXNativeTarget "NoshTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +552,7 @@
 				23FD39B51CB2CF0D00C8B4A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23FD39B61CB2CF0D00C8B4A8 /* Build configuration list for PBXNativeTarget "NoshUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +561,7 @@
 				23FD39B81CB2CF0D00C8B4A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

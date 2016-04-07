@@ -9,7 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // MARK: Properties
+    @IBOutlet weak var queryTextField: UITextField!
 
+    // MARK: Actions
+    @IBAction func searchButtonOnTouchUpInside(sender: UIButton) {
+        let feedbag = Feedbag(apiKey: AppDelegate.apiKey)
+        let query = SearchOptions()
+
+        query.query = queryTextField.text
+
+        feedbag.send(query)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

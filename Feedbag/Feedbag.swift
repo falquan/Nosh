@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+class Feedbag {
+    let apiKey : String
+    
+    init(apiKey: String) {
+        self.apiKey = apiKey
+    }
+    
+    func send(searchOptions: SearchOptions) -> SearchResult {
+        let result = SearchResult()
+        
+        // TODO: send to service
+        print("sending....")
+
+        return result
+    }
+}
