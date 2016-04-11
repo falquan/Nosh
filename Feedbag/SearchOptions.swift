@@ -9,8 +9,15 @@
 import Foundation
 
 class SearchOptions {
+    init() {
+        
+    }
+    
+    init(query: String) {
+        self.query = query
+    }
+
     var query : String = ""
-    var foodGroupId : String = ""
     var sortBy : SortBy = SortBy.Relevance
     var max : Int = 25
     var offset : Int = 0
