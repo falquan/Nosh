@@ -18,9 +18,9 @@ class ViewController: UIViewController {
         let feedbag = Feedbag(apiKey: AppDelegate.apiKey)
         let query = SearchOptions()
 
-        query.query = queryTextField.text
+        query.query = queryTextField.text!
 
-        feedbag.send(query)
+        feedbag.search(query)
     }
     
     override func viewDidLoad() {
