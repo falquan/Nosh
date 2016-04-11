@@ -9,15 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let serviceConfiguration = ServiceConfiguration(serviceId: ServiceIdentification.NDBUSDA, apiKey: AppDelegate.apiKey)
     
     // MARK: Properties
     @IBOutlet weak var queryTextField: UITextField!
 
     // MARK: Actions
     @IBAction func searchButtonOnTouchUpInside(sender: UIButton) {
-        let feedbag = Feedbag(apiKey: AppDelegate.apiKey)
-        let query = SearchOptions()
+        let config = FeedbagConfiguration(serviceConfiguration: self.serviceConfiguration)
+        let feedbag = Feedbag(config: config)
 
+        let query = SearchOptions()
         query.query = queryTextField.text!
 
         feedbag.search(query)
