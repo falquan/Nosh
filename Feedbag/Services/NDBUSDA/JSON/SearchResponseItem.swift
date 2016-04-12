@@ -24,5 +24,5 @@ class SearchResponseItem : Mappable {
     var offset : Int?
     var group : String?
     var name : String?
-    var ndbNumber : IntMax?
+    var ndbNumber : String?
 }

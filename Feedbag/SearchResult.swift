@@ -9,5 +9,9 @@
 import Foundation
 
 class SearchResult {
+    
+    var query : String?
+    var total : Int?
+    var items : [SearchItem]?
 
 }

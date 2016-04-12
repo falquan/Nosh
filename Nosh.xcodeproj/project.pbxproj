@@ -25,6 +25,8 @@
 		23A83CC51CBC60F000C8E7EC /* SortBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A83CBF1CBC60F000C8E7EC /* SortBy.swift */; };
 		23A83CC91CBC614900C8E7EC /* ConfigurationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A83CC81CBC614900C8E7EC /* ConfigurationError.swift */; };
 		23B9BC991CBC62DD00C0F1C3 /* FeedbagConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B9BC981CBC62DD00C0F1C3 /* FeedbagConfiguration.swift */; };
+		23B9BC9B1CBC6FA700C0F1C3 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B9BC9A1CBC6FA700C0F1C3 /* HTTPStatusCode.swift */; };
+		23B9BC9D1CBC72B200C0F1C3 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B9BC9C1CBC72B200C0F1C3 /* SearchItem.swift */; };
 		23FD39891CB2CF0D00C8B4A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FD39881CB2CF0D00C8B4A8 /* AppDelegate.swift */; };
 		23FD398B1CB2CF0D00C8B4A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FD398A1CB2CF0D00C8B4A8 /* ViewController.swift */; };
 		23FD398E1CB2CF0D00C8B4A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FD398C1CB2CF0D00C8B4A8 /* Main.storyboard */; };
@@ -86,6 +88,8 @@
 		23A83CBF1CBC60F000C8E7EC /* SortBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SortBy.swift; path = Feedbag/Services/NDBUSDA/JSON/SortBy.swift; sourceTree = "<group>"; };
 		23A83CC81CBC614900C8E7EC /* ConfigurationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigurationError.swift; path = Feedbag/Services/ConfigurationError.swift; sourceTree = "<group>"; };
 		23B9BC981CBC62DD00C0F1C3 /* FeedbagConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedbagConfiguration.swift; path = Feedbag/FeedbagConfiguration.swift; sourceTree = "<group>"; };
+		23B9BC9A1CBC6FA700C0F1C3 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPStatusCode.swift; path = Feedbag/HTTPStatusCode.swift; sourceTree = "<group>"; };
+		23B9BC9C1CBC72B200C0F1C3 /* SearchItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchItem.swift; path = Feedbag/SearchItem.swift; sourceTree = "<group>"; };
 		23FD39851CB2CF0D00C8B4A8 /* Nosh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nosh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23FD39881CB2CF0D00C8B4A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23FD398A1CB2CF0D00C8B4A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -226,6 +230,8 @@
 			children = (
 				23FD39BA1CB2D3C800C8B4A8 /* Feedbag.swift */,
 				23B9BC981CBC62DD00C0F1C3 /* FeedbagConfiguration.swift */,
+				23B9BC9A1CBC6FA700C0F1C3 /* HTTPStatusCode.swift */,
+				23B9BC9C1CBC72B200C0F1C3 /* SearchItem.swift */,
 				2358DE991CB6C21000F3BF80 /* SearchOptions.swift */,
 				23794CD61CBC2B1A00399C7F /* SearchResult.swift */,
 				23A83CA91CBC5EC200C8E7EC /* Services */,
@@ -377,10 +383,12 @@
 			files = (
 				23A83CB11CBC5F2000C8E7EC /* ServiceIdentification.swift in Sources */,
 				2358DE9A1CB6C21000F3BF80 /* SearchOptions.swift in Sources */,
+				23B9BC9D1CBC72B200C0F1C3 /* SearchItem.swift in Sources */,
 				23FD39BE1CB2D41C00C8B4A8 /* FeedbagTests.swift in Sources */,
 				23A83CC51CBC60F000C8E7EC /* SortBy.swift in Sources */,
 				23A83CAF1CBC5F2000C8E7EC /* SearchService.swift in Sources */,
 				23A83CC21CBC60F000C8E7EC /* SearchResponse.swift in Sources */,
+				23B9BC9B1CBC6FA700C0F1C3 /* HTTPStatusCode.swift in Sources */,
 				23A83CC31CBC60F000C8E7EC /* SearchResponseItem.swift in Sources */,
 				23FD398B1CB2CF0D00C8B4A8 /* ViewController.swift in Sources */,
 				23A83CB01CBC5F2000C8E7EC /* ServiceConfiguration.swift in Sources */,
