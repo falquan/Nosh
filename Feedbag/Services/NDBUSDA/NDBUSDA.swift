@@ -33,7 +33,7 @@ class NDBUSDA : SearchService {
             (data, response, error) -> Void in
             
             if let response = response as? NSHTTPURLResponse {
-                if response.statusCode == 200 {
+                if response.statusCode == HTTPStatusCode.OK.rawValue {
                     do {
                         let json = try self.searchValidateResponse(data, response: response, error: error)
                         let result = Mapper<SearchResponse>().map(json)!
@@ -61,10 +61,23 @@ class NDBUSDA : SearchService {
         return json;
     }
     
-    func searchNotifySuccess(result: SearchResponse) -> SearchResult {
-        print(result.list?.items!.count)
+    func searchNotifySuccess(response: SearchResponse) -> SearchResult {
+        print(response.list?.items!.count)
         
-        return SearchResult()
+        var items = [SearchItem]()
+        for responseItem: SearchResponseItem in (response.list?.items)! {
+            let resultItem = SearchItem()
+            resultItem.id = responseItem.ndbNumber
+            resultItem.name = responseItem.name
+            items.append(resultItem)
+        }
+        
+        let searchResult = SearchResult()
+        searchResult.items = items
+        searchResult.query = response.list?.query
+        searchResult.total = response.list?.total
+        
+        return searchResult
     }
     
     func searchNotifyError(error: NSError) {
