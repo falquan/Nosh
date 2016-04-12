@@ -1,0 +1,10 @@
+language: objective-c
+ 
+xcode_project: Nosh.xcodeproj
+xcode_scheme: Nosh
+osx_image: xcode7.3
+
+before_install: 
+  - brew update
+  - brew install carthage
+  - carthage bootstrap --verbose
