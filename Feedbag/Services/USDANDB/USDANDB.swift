@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class USDANDB : SearchService {
+class USDANDB : NutritionService {
     let apiKey : String
 
     required init(config: ServiceConfiguration) {
@@ -24,9 +24,9 @@ class USDANDB : SearchService {
         url.query =
             "format=\(ResultFormat.JSON.rawValue)&" +
             "q=\(searchOptions.query)&" +
-            "sort=\(searchOptions.sortBy.rawValue)&" +
+            "sort=r&" +
             "max=\(searchOptions.max)&" +
-            "offset=\(searchOptions.offset)&" +
+            "offset=0&" +
             "api_key=\(self.apiKey)"
         
         NSURLSession.sharedSession().dataTaskWithURL(url.URL!) {

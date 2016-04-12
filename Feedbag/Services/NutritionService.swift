@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol SearchService {
+protocol NutritionService {
     init(config: ServiceConfiguration)
     
     func search(searchOptions: SearchOptions)

@@ -14,11 +14,11 @@ class FeedbagConfiguration {
     }
 
     init(serviceId: String) {
-        serviceConfiguration = ServiceConfiguration(serviceId: serviceId)
+        self.serviceConfiguration = ServiceConfiguration(serviceId: serviceId)
     }
     
     init(serviceId: String, apiKey: String) {
-        serviceConfiguration = ServiceConfiguration(serviceId: serviceId, apiKey: apiKey)
+        self.serviceConfiguration = ServiceConfiguration(serviceId: serviceId, apiKey: apiKey)
     }
 
     let serviceConfiguration : ServiceConfiguration

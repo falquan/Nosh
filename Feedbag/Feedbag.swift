@@ -11,8 +11,7 @@ import Foundation
 class Feedbag {
     let config : FeedbagConfiguration
 
-//  TODO: configure these with IoC container
-    let searchService : SearchService
+    let nutritionService : NutritionService
     
     init(config: FeedbagConfiguration) {
         self.config = config
@@ -25,10 +24,10 @@ class Feedbag {
 //                throw ConfigurationError.MissingServiceId
 //        }
 
-        self.searchService = USDANDB(config: config.serviceConfiguration)
+        self.nutritionService = USDANDB(config: config.serviceConfiguration)
     }
     
     func search(searchOptions: SearchOptions) {
-        self.searchService.search(searchOptions)
+        self.nutritionService.search(searchOptions)
     }
 }

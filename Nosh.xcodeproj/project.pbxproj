@@ -12,7 +12,7 @@
 		23794CDB1CBC319400399C7F /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 23794CDA1CBC319400399C7F /* Cartfile */; };
 		23794CDD1CBC33B800399C7F /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23794CDC1CBC33B800399C7F /* ObjectMapper.framework */; };
 		23794CDE1CBC33B800399C7F /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23794CDC1CBC33B800399C7F /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		23A83CAF1CBC5F2000C8E7EC /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A83CAB1CBC5F2000C8E7EC /* SearchService.swift */; };
+		23A83CAF1CBC5F2000C8E7EC /* NutritionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A83CAB1CBC5F2000C8E7EC /* NutritionService.swift */; };
 		23A83CB01CBC5F2000C8E7EC /* ServiceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A83CAC1CBC5F2000C8E7EC /* ServiceConfiguration.swift */; };
 		23A83CB11CBC5F2000C8E7EC /* ServiceIdentification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A83CAD1CBC5F2000C8E7EC /* ServiceIdentification.swift */; };
 		23A83CB61CBC609E00C8E7EC /* ConversionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A83CB51CBC609E00C8E7EC /* ConversionError.swift */; };
@@ -75,7 +75,7 @@
 		23794CD61CBC2B1A00399C7F /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResult.swift; path = Feedbag/SearchResult.swift; sourceTree = "<group>"; };
 		23794CDA1CBC319400399C7F /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		23794CDC1CBC33B800399C7F /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
-		23A83CAB1CBC5F2000C8E7EC /* SearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchService.swift; path = Feedbag/Services/SearchService.swift; sourceTree = "<group>"; };
+		23A83CAB1CBC5F2000C8E7EC /* NutritionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NutritionService.swift; path = Feedbag/Services/NutritionService.swift; sourceTree = "<group>"; };
 		23A83CAC1CBC5F2000C8E7EC /* ServiceConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceConfiguration.swift; path = Feedbag/Services/ServiceConfiguration.swift; sourceTree = "<group>"; };
 		23A83CAD1CBC5F2000C8E7EC /* ServiceIdentification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceIdentification.swift; path = Feedbag/Services/ServiceIdentification.swift; sourceTree = "<group>"; };
 		23A83CB51CBC609E00C8E7EC /* ConversionError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversionError.swift; path = Feedbag/Services/ConversionError.swift; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 				23A83CC81CBC614900C8E7EC /* ConfigurationError.swift */,
 				23A83CB51CBC609E00C8E7EC /* ConversionError.swift */,
 				23A83CB21CBC5FD900C8E7EC /* USDANDB */,
-				23A83CAB1CBC5F2000C8E7EC /* SearchService.swift */,
+				23A83CAB1CBC5F2000C8E7EC /* NutritionService.swift */,
 				23A83CAC1CBC5F2000C8E7EC /* ServiceConfiguration.swift */,
 				23A83CAD1CBC5F2000C8E7EC /* ServiceIdentification.swift */,
 			);
@@ -386,7 +386,7 @@
 				23B9BC9D1CBC72B200C0F1C3 /* SearchItem.swift in Sources */,
 				23FD39BE1CB2D41C00C8B4A8 /* FeedbagTests.swift in Sources */,
 				23A83CC51CBC60F000C8E7EC /* SortBy.swift in Sources */,
-				23A83CAF1CBC5F2000C8E7EC /* SearchService.swift in Sources */,
+				23A83CAF1CBC5F2000C8E7EC /* NutritionService.swift in Sources */,
 				23A83CC21CBC60F000C8E7EC /* SearchResponse.swift in Sources */,
 				23B9BC9B1CBC6FA700C0F1C3 /* HTTPStatusCode.swift in Sources */,
 				23A83CC31CBC60F000C8E7EC /* SearchResponseItem.swift in Sources */,

@@ -18,7 +18,5 @@ class SearchOptions {
     }
 
     var query : String = ""
-    var sortBy : SortBy = SortBy.Relevance
     var max : Int = 25
-    var offset : Int = 0
 }
