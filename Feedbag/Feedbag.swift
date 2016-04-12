@@ -16,7 +16,7 @@ class Feedbag {
     init(config: FeedbagConfiguration) {
         self.config = config
 
-//        TODO: configure these with IoC container
+//        TODO: configure these with IoC container or something
 //        switch self.config.serviceConfiguration.serviceId {
 //            case "SomeSearchService":
 //                self.searchService = SomeSearchService(config: config.serviceConfiguration)
