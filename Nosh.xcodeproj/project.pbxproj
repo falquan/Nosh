@@ -16,7 +16,7 @@
 		23A83CB01CBC5F2000C8E7EC /* ServiceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A83CAC1CBC5F2000C8E7EC /* ServiceConfiguration.swift */; };
 		23A83CB11CBC5F2000C8E7EC /* ServiceIdentification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A83CAD1CBC5F2000C8E7EC /* ServiceIdentification.swift */; };
 		23A83CB61CBC609E00C8E7EC /* ConversionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A83CB51CBC609E00C8E7EC /* ConversionError.swift */; };
-		23A83CB81CBC60D500C8E7EC /* NDBUSDA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A83CB71CBC60D500C8E7EC /* NDBUSDA.swift */; };
+		23A83CB81CBC60D500C8E7EC /* USDANDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A83CB71CBC60D500C8E7EC /* USDANDB.swift */; };
 		23A83CC01CBC60F000C8E7EC /* ResultsFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A83CBA1CBC60F000C8E7EC /* ResultsFormat.swift */; };
 		23A83CC11CBC60F000C8E7EC /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A83CBB1CBC60F000C8E7EC /* SearchRequest.swift */; };
 		23A83CC21CBC60F000C8E7EC /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A83CBC1CBC60F000C8E7EC /* SearchResponse.swift */; };
@@ -79,13 +79,13 @@
 		23A83CAC1CBC5F2000C8E7EC /* ServiceConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceConfiguration.swift; path = Feedbag/Services/ServiceConfiguration.swift; sourceTree = "<group>"; };
 		23A83CAD1CBC5F2000C8E7EC /* ServiceIdentification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceIdentification.swift; path = Feedbag/Services/ServiceIdentification.swift; sourceTree = "<group>"; };
 		23A83CB51CBC609E00C8E7EC /* ConversionError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversionError.swift; path = Feedbag/Services/ConversionError.swift; sourceTree = "<group>"; };
-		23A83CB71CBC60D500C8E7EC /* NDBUSDA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NDBUSDA.swift; path = Feedbag/Services/NDBUSDA/NDBUSDA.swift; sourceTree = "<group>"; };
-		23A83CBA1CBC60F000C8E7EC /* ResultsFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultsFormat.swift; path = Feedbag/Services/NDBUSDA/JSON/ResultsFormat.swift; sourceTree = "<group>"; };
-		23A83CBB1CBC60F000C8E7EC /* SearchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchRequest.swift; path = Feedbag/Services/NDBUSDA/JSON/SearchRequest.swift; sourceTree = "<group>"; };
-		23A83CBC1CBC60F000C8E7EC /* SearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResponse.swift; path = Feedbag/Services/NDBUSDA/JSON/SearchResponse.swift; sourceTree = "<group>"; };
-		23A83CBD1CBC60F000C8E7EC /* SearchResponseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResponseItem.swift; path = Feedbag/Services/NDBUSDA/JSON/SearchResponseItem.swift; sourceTree = "<group>"; };
-		23A83CBE1CBC60F000C8E7EC /* SearchResponseList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResponseList.swift; path = Feedbag/Services/NDBUSDA/JSON/SearchResponseList.swift; sourceTree = "<group>"; };
-		23A83CBF1CBC60F000C8E7EC /* SortBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SortBy.swift; path = Feedbag/Services/NDBUSDA/JSON/SortBy.swift; sourceTree = "<group>"; };
+		23A83CB71CBC60D500C8E7EC /* USDANDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = USDANDB.swift; path = Feedbag/Services/USDANDB/USDANDB.swift; sourceTree = "<group>"; };
+		23A83CBA1CBC60F000C8E7EC /* ResultsFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultsFormat.swift; path = Feedbag/Services/USDANDB/JSON/ResultsFormat.swift; sourceTree = "<group>"; };
+		23A83CBB1CBC60F000C8E7EC /* SearchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchRequest.swift; path = Feedbag/Services/USDANDB/JSON/SearchRequest.swift; sourceTree = "<group>"; };
+		23A83CBC1CBC60F000C8E7EC /* SearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResponse.swift; path = Feedbag/Services/USDANDB/JSON/SearchResponse.swift; sourceTree = "<group>"; };
+		23A83CBD1CBC60F000C8E7EC /* SearchResponseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResponseItem.swift; path = Feedbag/Services/USDANDB/JSON/SearchResponseItem.swift; sourceTree = "<group>"; };
+		23A83CBE1CBC60F000C8E7EC /* SearchResponseList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResponseList.swift; path = Feedbag/Services/USDANDB/JSON/SearchResponseList.swift; sourceTree = "<group>"; };
+		23A83CBF1CBC60F000C8E7EC /* SortBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SortBy.swift; path = Feedbag/Services/USDANDB/JSON/SortBy.swift; sourceTree = "<group>"; };
 		23A83CC81CBC614900C8E7EC /* ConfigurationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigurationError.swift; path = Feedbag/Services/ConfigurationError.swift; sourceTree = "<group>"; };
 		23B9BC981CBC62DD00C0F1C3 /* FeedbagConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedbagConfiguration.swift; path = Feedbag/FeedbagConfiguration.swift; sourceTree = "<group>"; };
 		23B9BC9A1CBC6FA700C0F1C3 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPStatusCode.swift; path = Feedbag/HTTPStatusCode.swift; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 			children = (
 				23A83CC81CBC614900C8E7EC /* ConfigurationError.swift */,
 				23A83CB51CBC609E00C8E7EC /* ConversionError.swift */,
-				23A83CB21CBC5FD900C8E7EC /* NDBUSDA */,
+				23A83CB21CBC5FD900C8E7EC /* USDANDB */,
 				23A83CAB1CBC5F2000C8E7EC /* SearchService.swift */,
 				23A83CAC1CBC5F2000C8E7EC /* ServiceConfiguration.swift */,
 				23A83CAD1CBC5F2000C8E7EC /* ServiceIdentification.swift */,
@@ -147,13 +147,13 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
-		23A83CB21CBC5FD900C8E7EC /* NDBUSDA */ = {
+		23A83CB21CBC5FD900C8E7EC /* USDANDB */ = {
 			isa = PBXGroup;
 			children = (
 				23A83CB91CBC60DA00C8E7EC /* JSON */,
-				23A83CB71CBC60D500C8E7EC /* NDBUSDA.swift */,
+				23A83CB71CBC60D500C8E7EC /* USDANDB.swift */,
 			);
-			name = NDBUSDA;
+			name = USDANDB;
 			sourceTree = "<group>";
 		};
 		23A83CB91CBC60DA00C8E7EC /* JSON */ = {
@@ -398,7 +398,7 @@
 				23FD39911CB2CF0D00C8B4A8 /* Nosh.xcdatamodeld in Sources */,
 				23A83CC91CBC614900C8E7EC /* ConfigurationError.swift in Sources */,
 				23A83CC01CBC60F000C8E7EC /* ResultsFormat.swift in Sources */,
-				23A83CB81CBC60D500C8E7EC /* NDBUSDA.swift in Sources */,
+				23A83CB81CBC60D500C8E7EC /* USDANDB.swift in Sources */,
 				23A83CC11CBC60F000C8E7EC /* SearchRequest.swift in Sources */,
 				23A83CC41CBC60F000C8E7EC /* SearchResponseList.swift in Sources */,
 				23FD39891CB2CF0D00C8B4A8 /* AppDelegate.swift in Sources */,

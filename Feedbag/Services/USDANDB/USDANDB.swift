@@ -1,5 +1,5 @@
 //
-//  NDBUSDA.swift
+//  USDANDB.swift
 //  Nosh
 //
 //  Created by Falquan on 4/11/16.
@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class NDBUSDA : SearchService {
+class USDANDB : SearchService {
     let apiKey : String
 
     required init(config: ServiceConfiguration) {

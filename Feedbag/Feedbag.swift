@@ -25,7 +25,7 @@ class Feedbag {
 //                throw ConfigurationError.MissingServiceId
 //        }
 
-        self.searchService = NDBUSDA(config: config.serviceConfiguration)
+        self.searchService = USDANDB(config: config.serviceConfiguration)
     }
     
     func search(searchOptions: SearchOptions) {

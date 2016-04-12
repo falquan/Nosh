@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let serviceConfiguration = ServiceConfiguration(serviceId: ServiceIdentification.NDBUSDA, apiKey: AppDelegate.apiKey)
+    let serviceConfiguration = ServiceConfiguration(serviceId: ServiceIdentification.USDANDB, apiKey: AppDelegate.apiKey)
     
     // MARK: Properties
     @IBOutlet weak var queryTextField: UITextField!

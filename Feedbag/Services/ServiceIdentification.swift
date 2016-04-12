@@ -9,5 +9,5 @@
 import Foundation
 
 class ServiceIdentification {
-    static let NDBUSDA = "NDBUSDA"
+    static let USDANDB = "USDANDB"
 }
