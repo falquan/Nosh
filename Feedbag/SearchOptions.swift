@@ -13,10 +13,10 @@ class SearchOptions {
         
     }
     
-    init(query: String) {
+    init(query: String?) {
         self.query = query
     }
 
-    var query : String = ""
+    var query : String?
     var max : Int = 25
 }

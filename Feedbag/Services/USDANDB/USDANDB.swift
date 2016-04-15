@@ -78,7 +78,7 @@ class USDANDB : NutritionService {
         return searchResult
     }
     
-    func searchNotifyError(error: NSError) {
+    func searchNotifyError(error: NSError?) {
         print("error occured: \(error)")
     }
 }

@@ -14,5 +14,5 @@ protocol NutritionService {
     func search(searchOptions: SearchOptions)
     func searchValidateResponse(data: NSData?, response: NSURLResponse?, error: NSError?) throws -> NSDictionary
     func searchNotifySuccess(result: SearchResponse) -> SearchResult
-    func searchNotifyError(error: NSError)
+    func searchNotifyError(error: NSError?)
 }

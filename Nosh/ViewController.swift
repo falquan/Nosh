@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         let config = FeedbagConfiguration(serviceConfiguration: self.serviceConfiguration)
         let feedbag = Feedbag(config: config)
 
-        let query = SearchOptions(query: queryTextField.text!)
+        let query = SearchOptions(query: queryTextField.text)
 
         feedbag.search(query)
     }
