@@ -12,7 +12,8 @@ protocol NutritionService {
     init(config: ServiceConfiguration)
     
     func search(searchOptions: SearchOptions)
-    func searchValidateResponse(data: NSData?, response: NSURLResponse?, error: NSError?) throws -> NSDictionary
-    func searchNotifySuccess(result: SearchResponse) -> SearchResult
+    func searchValidateResponse(response: NSURLResponse?, error: NSError?) throws
+    func searchParseResponse(data: NSData?) throws -> NSDictionary
+    func searchNotifySuccess(result: SearchResult?)
     func searchNotifyError(error: NSError?)
 }

@@ -18,9 +18,8 @@ class ViewController: UIViewController {
     @IBAction func searchButtonOnTouchUpInside(sender: UIButton) {
         let config = FeedbagConfiguration(serviceConfiguration: self.serviceConfiguration)
         let feedbag = Feedbag(config: config)
-
+        
         let query = SearchOptions(query: queryTextField.text)
-
         feedbag.search(query)
     }
     
@@ -33,7 +32,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 

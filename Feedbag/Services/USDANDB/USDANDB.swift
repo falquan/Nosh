@@ -9,6 +9,12 @@
 import Foundation
 import ObjectMapper
 
+enum HTTPError : String, ErrorType {
+    case InvalidResponse = "ERROR: Invalid response"
+    case IncorrectStatusCode = "ERROR: Incorrect status code"
+    case RequestFailed = "ERROR: Request to service failed"
+}
+
 class USDANDB : NutritionService {
     let apiKey : String
 
@@ -31,25 +37,47 @@ class USDANDB : NutritionService {
         
         NSURLSession.sharedSession().dataTaskWithURL(url.URL!) {
             (data, response, error) -> Void in
-            
-            if let response = response as? NSHTTPURLResponse {
-                if response.statusCode == HTTPStatusCode.OK.rawValue {
-                    do {
-                        let json = try self.searchValidateResponse(data, response: response, error: error)
-                        let result = Mapper<SearchResponse>().map(json)!
-                        self.searchNotifySuccess(result)
-                        return
-                    } catch {
-                        print("invalid JSON")
-                    }
-                }
+
+            do {
+                try self.searchValidateResponse(response, error: error)
+                let json = try self.searchParseResponse(data)
+                let mappedResponse = Mapper<SearchResponse>().map(json)
+                let result = self.convertToSearchResult(mappedResponse!)
+                self.searchNotifySuccess(result)
+                return
+            } catch (HTTPError.RequestFailed) {
+                print("request to service failed")
+            } catch (HTTPError.IncorrectStatusCode) {
+                print("incorrect status code received from service")
+            } catch (HTTPError.InvalidResponse) {
+                print("invalid response received from service")
+            } catch (ConversionError.NoData) {
+                print("invalid JSON, no data found")
+            } catch (ConversionError.ConversionFailed) {
+                print("invalid JSON, conversion failed")
+            } catch {
+                print("unknown error")
             }
-            
-            self.searchNotifyError(error!)
         }.resume()
     }
     
-    func searchValidateResponse(data: NSData?, response: NSURLResponse?, error: NSError?) throws -> NSDictionary {
+    func searchValidateResponse(response: NSURLResponse?, error: NSError?) throws {
+        guard error != nil else {
+            throw HTTPError.RequestFailed
+        }
+
+        guard let response = response as? NSHTTPURLResponse else {
+            // change to real error
+            throw HTTPError.InvalidResponse
+        }
+        
+        guard response.statusCode != HTTPStatusCode.OK.rawValue else {
+            // change to real error
+            throw HTTPError.IncorrectStatusCode
+        }
+    }
+    
+    func searchParseResponse(data: NSData?) throws -> NSDictionary {
         guard let data = data else {
             throw ConversionError.NoData
         }
@@ -60,8 +88,8 @@ class USDANDB : NutritionService {
         
         return json;
     }
-    
-    func searchNotifySuccess(response: SearchResponse) -> SearchResult {
+
+    func convertToSearchResult(response: SearchResponse) -> SearchResult? {
         var items = [SearchItem]()
         for responseItem: SearchResponseItem in (response.list?.items)! {
             let resultItem = SearchItem()
@@ -76,6 +104,11 @@ class USDANDB : NutritionService {
         searchResult.total = response.list?.total
         
         return searchResult
+    }
+    
+    func searchNotifySuccess(result: SearchResult?) {
+        // TODO: find a way to provide notification to other objects
+        print("success")
     }
     
     func searchNotifyError(error: NSError?) {
